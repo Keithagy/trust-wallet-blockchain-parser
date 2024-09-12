@@ -1,0 +1,86 @@
+{
+  "info": {
+    "name": "Ethereum Parser API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Current Block",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/currentBlock",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["currentBlock"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Subscribe to Address",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/subscribe?address=0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["subscribe"],
+          "query": [
+            {
+              "key": "address",
+              "value": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Unsubscribe from Address",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/subscribe?address=0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["subscribe"],
+          "query": [
+            {
+              "key": "address",
+              "value": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Transactions for Address",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/transactions?address=0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["transactions"],
+          "query": [
+            {
+              "key": "address",
+              "value": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
